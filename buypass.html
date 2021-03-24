@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Register - Brand</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/icon-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+</head>
+
+<body class="bg-gradient-primary">
+    <div class="container">
+        <div class="card shadow-lg o-hidden border-0 my-5">
+            <div class="card-body p-0">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-12">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h4 class="text-dark mb-4">Buy Pass</h4>
+                            </div>
+                            <form class="user">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <div class="card shadow border-left-primary py-2">
+                                            <div class="card-body"  data-toggle="modal" data-target="#day">
+                                                <div class="form-row align-items-center no-gutters">
+                                                    <div class="col mr-2">
+                                                        <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>day pass</span></div>
+                                                        <div class="text-dark font-weight-bold h5 mb-0"><span>₹50</span></div>
+                                                    </div>
+                                                    <div class="col-auto d-flex align-items-center">
+                                                        <p style="font-size: 8px;">Validity:1 Day<br></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <div class="card shadow border-left-info py-2">
+                                        <div class="card-body" data-toggle="modal" data-target="#month">
+                                            <div class="form-row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase text-info font-weight-bold text-xs mb-1"><span>Month pass</span></div>
+                                                    <div class="form-row no-gutters align-items-center">
+                                                        <div class="col-auto">
+                                                            <div class="text-dark font-weight-bold h5 mb-0 mr-3"><span>₹1000</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto" style="font-size: 8px;">
+                                                    <p>Validity: 30 Days<br></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </form>
+                            <div class="row">
+                                <div class="col"><a class="btn btn-danger d-flex justify-content-center btn-circle ml-1" role="button" href="index.php"><i class="fas fa-arrow-left text-white"></i></a></div>
+                            </div><a class="btn btn-light btn-icon-split" role="button"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Modals ----->
+
+<div class="modal fade" id="day" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">Buy Day Pass</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="userregister.php" method="POST">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="email1">Name</label>
+            <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter Name">
+            
+          </div>
+          <div class="form-group">
+            <label for="password1">Phone</label>
+            <input type="text" class="form-control" name="phone" placeholder="Enter Phone">
+          </div>
+          <div class="form-group">
+            <input type="hidden" class="form-control" name="type" placeholder="Confirm Password" value="day">
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-center">
+          <button type="submit" class="btn btn-success">Buy</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="month" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">Buy Month Pass</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="userregister.php" method="POST">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="email1">Name</label>
+            <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter Name">
+            
+          </div>
+          <div class="form-group">
+            <label for="password1">Phone</label>
+            <input type="text" class="form-control" name="phone" placeholder="Enter Phone">
+          </div>
+          <div class="form-group">
+            <input type="hidden" class="form-control" name="type" value="month">
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-center">
+          <button type="submit" class="btn btn-success">Buy</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
